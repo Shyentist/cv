@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pasquale Buonomo Curriculum Vitae</title>
+    <link rel="stylesheet" href="/enhance-styles.css">
+    <link rel="stylesheet" type="text/css" href="./_public/styles.css">
+    <link rel="icon" href="/_public/favicon.svg">
+  <style scope="global">
+
+* {
+ margin: 0;
+ padding: 0;
+ border: 0 solid transparent;
+}
+
+body {
+  height: 100vh;
+  background-color: white;
+  font-family: monospace;
+  text-align: justify;
+  text-justify: inter-character;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+}
+
+main {
+  width: 90%;
+  height: 100%;
+  padding-top: 1.333rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  font-size: 3.25vw;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.5vw;
+  letter-spacing: .25ch;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+
+dt {
+  font-size: 2vw;
+}
+
+p, dd {
+  font-size: 1.75vw;
+  padding-bottom: 10px;
+}
+
+a {
+  color:blue;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: purple;
+}
+
+.hidden {
+  display: none;
+}
+
+.not-to-print {
+  color: gray;
+}
+
+@media print {
+  .hidden {
+    display: initial;
+  }
+
+  .page {
+      clear: both;
+      page-break-after: always;
+  }
+
+  .not-to-print {
+    display: none;
+  }
+
+  a:visited {
+    color: blue;
+  }
+}
+
+#my-hero header {
+width: 100%;
+display: flex;
+margin-bottom: 10px;
+}
+
+#my-hero .typewriter h1 {
+display: inline-block;
+align-self: center;
+letter-spacing: .25ch;
+overflow: hidden;
+}
+
+#my-hero .typewriter h1.typed {
+width: 25.25ch;
+animation: typing 3s steps(16), blink .5s step-end infinite alternate;
+white-space: nowrap;
+border-right: .25ch solid transparent;
+}
+
+@keyframes typing {
+from {
+  width: 5ch;
+}
+}
+
+@keyframes blink {
+50% {
+  border-color: orange;
+}
+}
+
+@media print {
+#my-hero .typed {
+  animation: none !important;
+}
+}
+section h2:hover {
+background-color: black;
+color: white;
+}
+
+@media print {
+section h2:hover {
+  background-color: initial;
+  color: initial;
+}
+}</style>
+
+</head>
+
+
+<body><main>
+  <div class="page">
+    <div id="my-hero">
+        <header>
+          <div class="typewriter">
+              <h1 class="typed"><samp>&gt;C:\Buonomo Pasquale</samp></h1>
+          </div>
+        </header>
+    </div>
+    <p class="not-to-print">Press 'Ctrl + P' to print, 'Left Click' on a header to read the section.</p>
+    <section>
+        <samp><h2 onclick="toggleHide('profile')">&gt;print(profile)</h2>
+        <div id="profile">
+      <p>Eager learner looking for a stimulating environment. My main goal is to broaden my knowledge and skills set in a way that could benefit the company or the project I am involved with.</p></div></samp>
+    </section>
+    <section>
+      <samp><h2 onclick="toggleHide('experience')">&gt;print(experience)</h2>
+        <div id="experience">
+          <dl>
+            <strong><dt>Programmer</dt></strong>
+            <dd>Independent Work, Malta | 2020 - Present</dd>
+            <dd>Data Entry, Collection, Analysis, and Visualization, Documentation Writing, Database Management, Version Control, UI/UX Design, Front-End, Back-End.</dd>
+            <strong><dt>Quality Assurance &amp; Biosafety Officer</dt></strong>
+            <dd>The BioArte Ltd., San Gwann, Malta | 2022 - Present</dd>
+            <dd>Curation of QMS (SOPs, IFUs, CAPAs, etc.), Integration of relevant standards and laws (ISO, GxP, FCPA, etc.), Full-Stack Web Development, Data Analysis and Visualization, Scripting, Procurement, Maintenance, and Calibration of Instruments, Warehouse Management, Personnel Training, Auditing.</dd>
+            <strong><dt>Regulatory Affairs &amp; Quality Assurance Assistant</dt></strong>
+            <dd>Drugsales Ltd., Lija, Malta | 2021</dd>
+            <dd>Curation of QMS (SOPs, IFUs, CAPAs, etc.), Integration of relevant standards and laws (ISO, GxP, FCPA, etc.), Registration and post-marketing surveillance of medicinal products, Pharmacovigilance, Scripting, Personnel Training, Auditing, Recalls.</dd>
+            <strong><dt>Quality Assurance Officer</dt></strong>
+            <dd>B&amp;B Euroimpianti s.r.l.s., Crispano, Italy | 2019 - 2020</dd>
+            <dd>Curation of QMS (SOPs, IFUs, CAPAs, etc.), Personnel Training, Internal Auditing.</dd>
+            <strong><dt>Naturalistic Tourism Operator</dt></strong>
+            <dd>Atlantide Soc. Coop. Sociale p.a., Ravenna, Italy | 2018 - 2019</dd>
+            <dd>Front Office, Back Office, Customer Care, Environmental Guidance, Workshops, Warehouse Management.</dd>
+            <strong><dt>Secretary Assistant</dt></strong>
+            <dd>Alma Mater Studiorum - University of Bologna, Ravenna, Italy | 2018 - 2019</dd>
+            <dd>Front Office, Back Office, Customer Care, Warehouse Management.</dd>
+          </dl>            
+        </div>
+      </samp>
+    </section>
+    <section>
+      <samp><h2 onclick="toggleHide('projects')">&gt;print(projects)</h2>
+        <div id="projects">
+          <dl>
+            <strong><dt>fishRman (R package)</dt></strong>
+            <dd>Author &amp; Maintainer | 2020 - Present</dd>
+            <dd>Bundle of analytics tools for fisheries scientists. A Shiny R Dashboard, published on the Journal of Open-Source Software (<a target="_blank" href="https://doi.org/10.21105/joss.03467">https://doi.org/10.21105/joss.03467</a>), is included for a 'no-code' solution, <a target="_blank" href="https://github.com/Shyentist/fish-r-man">https://github.com/Shyentist/fish-r-man</a>.</dd>
+            <strong><dt>Open-Source for Marine and Ocean Sciences, OSMOS</dt></strong>
+            <dd>Founder | 2021 - Present</dd><dd>Informal Open-Research group, <a target="_blank" href="https://osmos.xyz/">https://osmos.xyz/</a>.</dd>
+            <strong><dt>SpellPunk</dt></strong><dd>Author &amp; Maintainer | 2023 - Present</dd>
+            <dd>Telegram Bot Role-Playing Game, <a target="_blank" href="https://github.com/Shyentist/SpellPunk">https://github.com/Shyentist/SpellPunk</a>.</dd>
+            <strong><dt>Microbiota Test Report Automator, MiTRA</dt></strong>
+            <dd>Author &amp; Maintainer | 2022 - Present</dd>
+            <dd>Web application for compiling microbiota test reports for The BioArte.</dd>
+            <strong><dt>Introduction to Modern Statistics</dt></strong><dd>Contributor | 2022 - Present</dd>
+            <dd>A college-level Open-Source textbook with a modern approach highlighting multivariable relationships and simulation-based inference, <a target="_blank" href="https://github.com/OpenIntroStat/ims">https://github.com/OpenIntroStat/ims</a>.</dd>
+          </dl>            
+        </div>
+      </samp>
+    </section>
+  </div>
+  <div class="page">
+    <section>
+      <samp><h2 onclick="toggleHide('education')">&gt;print(education)</h2>
+        <div id="education">
+          <dl>
+            <strong><dt>Master's Degree in Marine Biology</dt></strong>
+            <dd>Alma Mater Studiorum - University of Bologna | 2017 - 2020</dd>
+            <dd>Thesis (included in FAO AdriaMed Working Group 2020): Analysis of fishing effort in the Northern Adriatic Sea through AIS data in order to define spatial limits for the proposed 'Sole Sanctuary'.</dd>
+            <strong><dt>Bachelor Degree in Biological Sciences</dt></strong>
+            <dd>Federico II - University of Naples | 2011 - 2016</dd>
+            <dd>Thesis: Open data and scientific research: a case study.</dd>
+          </dl>            
+        </div>
+      </samp>
+    </section>
+    <section>
+      <samp><h2 onclick="toggleHide('courses')">&gt;print(courses)</h2>
+        <div id="courses">
+          <dl>
+            <strong><dt>Full Stack Development Bootcamp</dt></strong>
+            <dd>Malta College of Arts, Science and Technology (MCAST) | 2023</dd>
+            <dd>This course, delivered in a very practical approach, teaches how to build full-stack web applications using MEAN (MongoDB, Express, Angular and Node).</dd>
+            <strong><dt>ISO 9001:2015 Internal Auditor</dt></strong>
+            <dd>Tuning Fork Limited | 2022</dd>
+            <dd>IRCA-approved course educating delegates on the key characteristics of a modern and effective quality management system, as well as the role of the auditor in its development and continuous improvement..</dd>
+            <strong><dt>MySeqDx Training</dt></strong>
+            <dd>Illumina, Inc. | 2022</dd>
+            <dd>Training on how to correctly operate and maintain the MiSeqDx instrument (NGS)..</dd>
+            <strong><dt>Data Science, Full Course</dt></strong>
+            <dd>365 Data Science | 2020</dd>
+            <dd>Comprehensive training in the field of data science, covering topics such as Excel, Python, R, Statistics, and Machine Learning.</dd>
+            <strong><dt>Tools for Data Analysis and Visualization</dt></strong>
+            <dd>Il Sestante Romagna | 2020</dd>
+            <dd>The course trains professionals in the analysis, visualization, and interpretation of data.</dd>
+          </dl>
+        </div>
+      </samp>
+    </section>
+    <section>
+      <samp><h2 onclick="toggleHide('skills')">&gt;print(skills)</h2>
+        <div id="skills">
+          <dl>
+            <strong><dt>HTML</dt></strong>
+            <dd>Enhance</dd>
+            <strong><dt>CSS</dt></strong>
+            <dd></dd>
+            <strong><dt>JavaScript/TypeScript</dt></strong>
+            <dd>Node, Deno, Express, Oak, Mongoose, Angular, React, Svelte, jQuery, Grammy</dd>
+            <strong><dt>R</dt></strong>
+            <dd>Rstudio, shiny, golem, tidyverse, testthat, roxygen2, plumber, rmarkdown, htmltools, readxl</dd>
+            <strong><dt>DBMS</dt></strong>
+            <dd>MySQL, SQLite, MongoDB</dd>
+            <strong><dt>Version Control</dt></strong>
+            <dd>Git, GitHub</dd>
+            <strong><dt>Spoken Languages</dt></strong>
+            <dd>Italian, English, Esperanto</dd>
+            <strong><dt>Miscellanea</dt></strong>
+            <dd>Office Suite (Microsoft/Libre), VS Code, Postman, GIMP, QGIS, Zotero/Mendeley</dd>
+          </dl>
+        </div>
+      </samp>
+    </section>
+  </div>
+</main>
+
+<script>
+  function toggleHide(element){
+
+    document.getElementById(element).classList.toggle("hidden");
+
+  }
+
+  let list = document.getElementsByTagName("section");
+    for (let i = 0; i < list.length; i++) {
+      toggleHide(list[i].getElementsByTagName("div")[0].id)
+    }
+</script>
+</body></html>
